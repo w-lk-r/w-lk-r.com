@@ -9,6 +9,20 @@
     "linkedinDesc": "Connect with me professionally",
     "icodethisDesc": "View my daily coding challenges and solutions"
   },
+  "ContactPage": {
+    "title": "Contact",
+    "description": "Have a question or want to work together? Fill out the form below and I'll get back to you as soon as possible.",
+    "nameLabel": "Name",
+    "namePlaceholder": "Your name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "your@email.com",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Your message...",
+    "submit": "Send Message",
+    "sending": "Sending...",
+    "successTitle": "Message Sent!",
+    "successMessage": "Thank you for reaching out. I'll get back to you soon."
+  },
   "ShokaiPage": {
     "title": "About",
     "employment": {
@@ -113,7 +127,8 @@
   "Navigation": {
     "home": "Home",
     "links": "Links",
-     "shokai": "About"
+    "shokai": "About",
+    "contact": "Contact"
   },
   "LocaleSwitcher": {
     "label": "Change language",

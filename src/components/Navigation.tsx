@@ -36,6 +36,7 @@ export default function Navigation() {
             <NavigationLink href="/">{t('home')}</NavigationLink>
             <NavigationLink href="/shokai">{t('shokai')}</NavigationLink>
             <NavigationLink href="/links">{t('links')}</NavigationLink>
+            <NavigationLink href="/contact">{t('contact')}</NavigationLink>
           </div>
 
           {/* Mobile Logo/Title Area */}
@@ -117,6 +118,9 @@ export default function Navigation() {
                 </NavigationLink>
                 <NavigationLink href="/links" onClick={() => setMobileMenuOpen(false)}>
                   {t('links')}
+                </NavigationLink>
+                <NavigationLink href="/contact" onClick={() => setMobileMenuOpen(false)}>
+                  {t('contact')}
                 </NavigationLink>
               </div>
 
