@@ -9,6 +9,20 @@
     "linkedinDesc": "プロフェッショナルなつながりを作りましょう",
     "icodethisDesc": "毎日のコーディングチャレンジとソリューションを見る"
   },
+  "ContactPage": {
+    "title": "お問い合わせ",
+    "description": "ご質問やお仕事のご依頼がありましたら、以下のフォームにご記入ください。できるだけ早くご返信いたします。",
+    "nameLabel": "お名前",
+    "namePlaceholder": "お名前を入力",
+    "emailLabel": "メールアドレス",
+    "emailPlaceholder": "your@email.com",
+    "messageLabel": "メッセージ",
+    "messagePlaceholder": "メッセージを入力...",
+    "submit": "送信する",
+    "sending": "送信中...",
+    "successTitle": "送信完了!",
+    "successMessage": "お問い合わせいただきありがとうございます。できるだけ早くご返信いたします。"
+  },
   "ShokaiPage": {
     "title": "紹介!",
     "employment": {
@@ -113,7 +127,8 @@
   "Navigation": {
     "home": "ホーム",
     "links": "リンク",
-    "shokai": "紹介"
+    "shokai": "紹介",
+    "contact": "お問い合わせ"
   },
   "LocaleSwitcher": {
     "label": "言語を変更する",
