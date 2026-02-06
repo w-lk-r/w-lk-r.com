@@ -31,8 +31,9 @@ export default function ShokaiPage() {
   };
 
   // Get employment entries
+  const rawEmployment = t.raw('employment.entries') as EmploymentEntry[];
   const employmentEntries: EmploymentEntry[] = [];
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < rawEmployment.length; i++) {
     try {
       const company = safeTranslation(`employment.entries.${i}.company`);
       const period = safeTranslation(`employment.entries.${i}.period`);
@@ -53,8 +54,9 @@ export default function ShokaiPage() {
   }
 
   // Get education entries
+  const rawEducation = t.raw('education.entries') as EducationEntry[];
   const educationEntries: EducationEntry[] = [];
-  for (let i = 0; i < 6; i++) {
+  for (let i = 0; i < rawEducation.length; i++) {
     try {
       const institution = safeTranslation(`education.entries.${i}.institution`);
       const period = safeTranslation(`education.entries.${i}.period`);
