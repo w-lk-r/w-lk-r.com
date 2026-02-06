@@ -1,13 +1,15 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
-import { useActionState } from 'react';
+import { useTranslations, useLocale } from 'next-intl';
+import { useState, useActionState } from 'react';
 import { Turnstile } from '@marsidev/react-turnstile';
 import Card from '../ui/Card';
 import { submitContactForm } from '@/app/actions/contact';
 
 export default function ContactPage() {
   const t = useTranslations('ContactPage');
+  const locale = useLocale();
+  const [wantsConfirmation, setWantsConfirmation] = useState(false);
   const [state, formAction, isPending] = useActionState(submitContactForm, {
     success: false,
   });
@@ -102,6 +104,24 @@ export default function ContactPage() {
                 className="w-full px-4 py-3 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-slate-100 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors resize-none"
                 placeholder={t('messagePlaceholder')}
               />
+            </div>
+
+            {/* Confirmation email opt-in */}
+            <div>
+              <input type="hidden" name="locale" value={locale} />
+              <label className="flex items-center gap-3 cursor-pointer">
+                <input
+                  type="checkbox"
+                  name="sendConfirmation"
+                  value="true"
+                  checked={wantsConfirmation}
+                  onChange={(e) => setWantsConfirmation(e.target.checked)}
+                  className="w-4 h-4 rounded border-slate-300 dark:border-slate-600 text-blue-600 focus:ring-blue-500"
+                />
+                <span className="text-sm text-slate-700 dark:text-slate-300">
+                  {t('confirmationLabel')}
+                </span>
+              </label>
             </div>
 
             {/* Honeypot field - hidden from users, visible to bots */}

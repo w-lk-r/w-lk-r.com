@@ -1,7 +1,8 @@
 {
   "HomePage": {
     "name": "Jonathan Walker",
-    "title": "Software Developer"
+    "title": "Software Developer",
+    "location": "Fujimi, Nagano, Japan"
   },
   "LinksPage": {
     "title": "Links",
@@ -18,6 +19,7 @@
     "emailPlaceholder": "your@email.com",
     "messageLabel": "Message",
     "messagePlaceholder": "Your message...",
+    "confirmationLabel": "Send me a confirmation email",
     "submit": "Send Message",
     "sending": "Sending...",
     "successTitle": "Message Sent!",
@@ -25,32 +27,26 @@
   },
   "ShokaiPage": {
     "title": "About",
+    "intro": "I'm Jonathan — a Certified Practicing Accountant turned software engineer originally from Australia, now living in Fujimi, Nagano. I love building things on the web, tinkering with infrastructure, and slowly but surely improving my Japanese. When I'm not coding, you'll probably find me exploring with my family or trying out various different fitness activities.",
+    "languages": {
+      "title": "Languages",
+      "english": "English",
+      "englishLevel": "Native",
+      "englishDescription": "Happy to help out with site reviews, documentation, copywriting, or anything else where a native English speaker comes in handy.",
+      "japanese": "Japanese",
+      "japaneseLevel": "Beginner - Intermediate",
+      "japaneseDescription": "Currently studying and comfortable with basic conversation. Since I haven't worked in Japan yet, my business Japanese still needs some work — but I'm willing to work hard!"
+    },
     "employment": {
       "title": "Employment History",
       "entries": [
         {
           "company": "Reposit Power",
-          "role": "Software Engineer & Internship",
+          "role": "Software Engineer",
           "period": "Dec 2020 - Nov 2023",
           "duration": "2 yrs 11 mos",
           "location": "Canberra, Australian Capital Territory, Australia",
           "description": "Software Engineer (Jul 2021 - Nov 2023): Working with Reposit Power I have got to show my strengths working across a variety of areas. My strongest of these would be working with infrastructure in GCP and following this working as a Developer with Python as the core programming language. I have worked across these areas and technology stacks: DevOps - Google Cloud Platform, Terraform, Salt, gcloud, gsutil; SRE - Prometheus.io, Zabbix, PagerDuty; Developer - Python, Tox, Poetry, Django, Flask; Version Control - Git and GitHub; CI/CD - Jenkins; Across Roles - GKE (Google Kubernetes Engine), Docker"
-        },
-        {
-          "company": "Support a Star",
-          "role": "Founder",
-          "period": "Jul 2018 - Jun 2020",
-          "duration": "2 yrs",
-          "location": "Canberra, ACT",
-          "description": ""
-        },
-        {
-          "company": "Australian Department of Health",
-          "role": "Research Analyst",
-          "period": "Jan 2020 - Mar 2020",
-          "duration": "3 mos",
-          "location": "",
-          "description": "Part-time"
         },
         {
           "company": "Synergy Group Australia",

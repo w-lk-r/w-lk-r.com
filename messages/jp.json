@@ -1,7 +1,8 @@
 {
   "HomePage": {
     "name": "ジョナサン・ウォーカー",
-    "title": "ソフトウェアエンジニア"
+    "title": "ソフトウェアエンジニア",
+    "location": "長野県富士見町"
   },
   "LinksPage": {
     "title": "リンク",
@@ -18,39 +19,34 @@
     "emailPlaceholder": "your@email.com",
     "messageLabel": "メッセージ",
     "messagePlaceholder": "メッセージを入力...",
+    "confirmationLabel": "確認メールを送信する",
     "submit": "送信する",
     "sending": "送信中...",
     "successTitle": "送信完了!",
     "successMessage": "お問い合わせいただきありがとうございます。できるだけ早くご返信いたします。"
   },
   "ShokaiPage": {
-    "title": "紹介!",
+    "title": "自己紹介",
+    "intro": "ジョナサンです。オーストラリア出身の公認会計士からソフトウェアエンジニアに転身し、現在は長野県富士見町に住んでいます。Web開発やインフラをいじるのが好きで、日本語も少しずつ勉強中です。コードを書いていない時は、家族と一緒に出かけたり、いろいろなフィットネスに挑戦したりしています。",
+    "languages": {
+      "title": "言語",
+      "english": "英語",
+      "englishLevel": "ネイティブ",
+      "englishDescription": "サイトレビュー、ドキュメント作成、コピーライティングなど、英語ネイティブスピーカーとしてお手伝いできることがあれば、お気軽にどうぞ。",
+      "japanese": "日本語",
+      "japaneseLevel": "初級〜中級",
+      "japaneseDescription": "現在勉強中で、日常会話は大丈夫です。まだ日本で働いた経験がないので、ビジネス日本語はまだまだですが、一生懸命頑張ります！"
+    },
     "employment": {
       "title": "職歴",
       "entries": [
         {
           "company": "Reposit Power",
-          "role": "ソフトウェアエンジニア・インターンシップ",
+          "role": "ソフトウェアエンジニア",
           "period": "2020年12月 - 2023年11月",
           "duration": "2年11ヶ月",
           "location": "キャンベラ、オーストラリア首都特別地域",
           "description": "ソフトウェアエンジニア（2021年7月 - 2023年11月）：Reposit Powerでは、さまざまな分野で自分の強みを発揮することができました。その中でも最も得意なのは、GCPのインフラストラクチャでの作業と、Pythonをコアプログラミング言語とする開発者としての作業です。DevOps - Google Cloud Platform、Terraform、Salt、gcloud、gsutil; SRE - Prometheus.io、Zabbix、PagerDuty; 開発 - Python、Tox、Poetry、Django、Flask; バージョン管理 - GitとGitHub; CI/CD - Jenkins; 全般 - GKE（Google Kubernetes Engine）、Docker"
-        },
-        {
-          "company": "Support a Star",
-          "role": "創設者",
-          "period": "2018年7月 - 2020年6月",
-          "duration": "2年",
-          "location": "キャンベラ、ACT",
-          "description": ""
-        },
-        {
-          "company": "オーストラリア保健省",
-          "role": "リサーチアナリスト",
-          "period": "2020年1月 - 2020年3月",
-          "duration": "3ヶ月",
-          "location": "",
-          "description": "パートタイム"
         },
         {
           "company": "Synergy Group Australia",
