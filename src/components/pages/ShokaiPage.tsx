@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import Card from '../ui/Card';
 import { TimelineSection, TimelineItem } from '../Timeline';
 
 type EmploymentEntry = {
@@ -80,6 +81,52 @@ export default function ShokaiPage() {
       </h1>
 
       <div className="space-y-12">
+        {/* Intro */}
+        <Card className="p-6 md:p-8">
+          <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
+            {t('intro')}
+          </p>
+        </Card>
+
+        {/* Languages */}
+        <section>
+          <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-6">
+            {t('languages.title')}
+          </h2>
+          <div className="grid gap-4 md:grid-cols-2">
+            <Card className="p-6">
+              <div className="space-y-2">
+                <div className="flex items-center justify-between">
+                  <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-100">
+                    {t('languages.english')}
+                  </h3>
+                  <span className="text-sm font-medium text-blue-500 dark:text-blue-400">
+                    {t('languages.englishLevel')}
+                  </span>
+                </div>
+                <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                  {t('languages.englishDescription')}
+                </p>
+              </div>
+            </Card>
+            <Card className="p-6">
+              <div className="space-y-2">
+                <div className="flex items-center justify-between">
+                  <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-100">
+                    {t('languages.japanese')}
+                  </h3>
+                  <span className="text-sm font-medium text-blue-500 dark:text-blue-400">
+                    {t('languages.japaneseLevel')}
+                  </span>
+                </div>
+                <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                  {t('languages.japaneseDescription')}
+                </p>
+              </div>
+            </Card>
+          </div>
+        </section>
+
         {/* Employment History */}
         <TimelineSection title={t('employment.title')}>
           {employmentEntries.map((entry, index) => (

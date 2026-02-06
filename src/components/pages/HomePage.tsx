@@ -36,10 +36,11 @@ export default function HomePage() {
   ];
 
   return (
-    <div className="container mx-auto px-4 py-12 min-h-screen flex items-center justify-center">
+    <div className="container mx-auto px-4 py-4 md:py-12 min-h-[calc(100dvh-3.5rem)] flex items-center justify-center">
       <ProfileCard
         name={t('name')}
         title={t('title')}
+        location={t('location')}
         avatarUrl="/images/previews/LinkedIn.jpeg"
         socialLinks={socialLinks}
       />

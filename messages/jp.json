@@ -1,7 +1,8 @@
 {
   "HomePage": {
     "name": "ジョナサン・ウォーカー",
-    "title": "ソフトウェアエンジニア"
+    "title": "ソフトウェアエンジニア",
+    "location": "長野県富士見町"
   },
   "LinksPage": {
     "title": "リンク",
@@ -18,6 +19,7 @@
     "emailPlaceholder": "your@email.com",
     "messageLabel": "メッセージ",
     "messagePlaceholder": "メッセージを入力...",
+    "confirmationLabel": "確認メールを送信する",
     "submit": "送信する",
     "sending": "送信中...",
     "successTitle": "送信完了!",
@@ -25,6 +27,16 @@
   },
   "ShokaiPage": {
     "title": "紹介!",
+    "intro": "ジョナサンです。オーストラリア出身の公認会計士からソフトウェアエンジニアに転身し、現在は長野県富士見町に住んでいます。Web開発やインフラをいじるのが好きで、日本語も少しずつ勉強中です。コードを書いていない時は、家族と一緒に出かけたり、いろいろなフィットネスに挑戦したりしています。",
+    "languages": {
+      "title": "言語",
+      "english": "英語",
+      "englishLevel": "ネイティブ",
+      "englishDescription": "サイトレビュー、ドキュメント作成、コピーライティングなど、英語ネイティブスピーカーとしてお手伝いできることがあれば、お気軽にどうぞ。",
+      "japanese": "日本語",
+      "japaneseLevel": "初級〜中級",
+      "japaneseDescription": "現在勉強中で、日常会話は大丈夫です。まだ日本で働いた経験がないので、ビジネス日本語はまだまだですが、一生懸命頑張ります！"
+    },
     "employment": {
       "title": "職歴",
       "entries": [

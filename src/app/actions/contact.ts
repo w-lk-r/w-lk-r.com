@@ -64,6 +64,10 @@ export async function submitContactForm(
   const name = formData.get('name') as string;
   const email = formData.get('email') as string;
   const message = formData.get('message') as string;
+  const sendConfirmation = formData.get('sendConfirmation') === 'true';
+  const confirmationLanguage = sendConfirmation
+    ? (formData.get('locale') as string) || 'en'
+    : null;
 
   // Basic validation
   if (!name || !email || !message) {
@@ -79,6 +83,8 @@ export async function submitContactForm(
     name,
     email,
     message,
+    send_confirmation: sendConfirmation,
+    confirmation_language: confirmationLanguage,
   });
 
   if (error) {

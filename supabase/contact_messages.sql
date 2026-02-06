@@ -6,6 +6,8 @@ create table if not exists contact_messages (
   name text not null,
   email text not null,
   message text not null,
+  send_confirmation boolean default false,
+  confirmation_language text,
   created_at timestamptz default now(),
   read boolean default false
 );

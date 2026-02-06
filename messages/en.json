@@ -1,7 +1,8 @@
 {
   "HomePage": {
     "name": "Jonathan Walker",
-    "title": "Software Developer"
+    "title": "Software Developer",
+    "location": "Fujimi, Nagano, Japan"
   },
   "LinksPage": {
     "title": "Links",
@@ -18,6 +19,7 @@
     "emailPlaceholder": "your@email.com",
     "messageLabel": "Message",
     "messagePlaceholder": "Your message...",
+    "confirmationLabel": "Send me a confirmation email",
     "submit": "Send Message",
     "sending": "Sending...",
     "successTitle": "Message Sent!",
@@ -25,6 +27,16 @@
   },
   "ShokaiPage": {
     "title": "About",
+    "intro": "I'm Jonathan — a Certified Practicing Accountant turned software engineer originally from Australia, now living in Fujimi, Nagano. I love building things on the web, tinkering with infrastructure, and slowly but surely improving my Japanese. When I'm not coding, you'll probably find me exploring with my family or trying out various different fitness activities.",
+    "languages": {
+      "title": "Languages",
+      "english": "English",
+      "englishLevel": "Native",
+      "englishDescription": "Happy to help out with site reviews, documentation, copywriting, or anything else where a native English speaker comes in handy.",
+      "japanese": "Japanese",
+      "japaneseLevel": "Beginner - Intermediate",
+      "japaneseDescription": "Currently studying and comfortable with basic conversation. Since I haven't worked in Japan yet, my business Japanese still needs some work — but I'm willing to work hard!"
+    },
     "employment": {
       "title": "Employment History",
       "entries": [

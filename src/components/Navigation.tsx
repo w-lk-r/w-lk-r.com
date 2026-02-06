@@ -2,6 +2,8 @@
 
 import {useTranslations} from 'next-intl';
 import {useEffect, useState} from 'react';
+import Image from 'next/image';
+import {Link} from '@/i18n/navigation';
 import LocaleSwitcher from './LocaleSwitcher';
 import NavigationLink from './NavigationLink';
 
@@ -40,9 +42,9 @@ export default function Navigation() {
           </div>
 
           {/* Mobile Logo/Title Area */}
-          <div className="md:hidden py-4 text-slate-100 font-semibold">
+          <Link href="/" className="md:hidden py-4 text-slate-100 font-semibold">
             {t('home')}
-          </div>
+          </Link>
 
           {/* Desktop Locale Switcher */}
           <div className="hidden md:block">
