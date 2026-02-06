@@ -42,27 +42,11 @@
       "entries": [
         {
           "company": "Reposit Power",
-          "role": "Software Engineer & Internship",
+          "role": "Software Engineer",
           "period": "Dec 2020 - Nov 2023",
           "duration": "2 yrs 11 mos",
           "location": "Canberra, Australian Capital Territory, Australia",
           "description": "Software Engineer (Jul 2021 - Nov 2023): Working with Reposit Power I have got to show my strengths working across a variety of areas. My strongest of these would be working with infrastructure in GCP and following this working as a Developer with Python as the core programming language. I have worked across these areas and technology stacks: DevOps - Google Cloud Platform, Terraform, Salt, gcloud, gsutil; SRE - Prometheus.io, Zabbix, PagerDuty; Developer - Python, Tox, Poetry, Django, Flask; Version Control - Git and GitHub; CI/CD - Jenkins; Across Roles - GKE (Google Kubernetes Engine), Docker"
-        },
-        {
-          "company": "Support a Star",
-          "role": "Founder",
-          "period": "Jul 2018 - Jun 2020",
-          "duration": "2 yrs",
-          "location": "Canberra, ACT",
-          "description": ""
-        },
-        {
-          "company": "Australian Department of Health",
-          "role": "Research Analyst",
-          "period": "Jan 2020 - Mar 2020",
-          "duration": "3 mos",
-          "location": "",
-          "description": "Part-time"
         },
         {
           "company": "Synergy Group Australia",
