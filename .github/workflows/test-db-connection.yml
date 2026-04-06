@@ -1,0 +1,47 @@
+name: Test Database Connection
+
+on:
+  schedule:
+    # Runs every 4 days at 09:00 UTC
+    - cron: '0 9 */4 * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  test-db:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Install supabase-js
+        run: npm install @supabase/supabase-js
+
+      - name: Test contact form insert
+        env:
+          SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+        run: |
+          node -e "
+          const { createClient } = require('@supabase/supabase-js');
+
+          (async () => {
+            const supabase = createClient(
+              process.env.SUPABASE_URL,
+              process.env.SUPABASE_ANON_KEY
+            );
+
+            const { error } = await supabase
+              .from('contact_messages')
+              .insert({
+                name: '__gh_action_test__',
+                email: 'test@github-actions.local',
+                message: 'DB connection test - ' + new Date().toISOString(),
+                send_confirmation: false,
+                confirmation_language: null,
+              });
+
+            if (error) {
+              console.error('Insert failed:', error.message);
+              process.exit(1);
+            }
+            console.log('Database connection healthy — insert succeeded');
+          })();
+          "
